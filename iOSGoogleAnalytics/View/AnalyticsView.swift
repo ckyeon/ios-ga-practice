@@ -5,6 +5,7 @@
 //  Created by 조기연 on 2023/08/31.
 //
 
+import FirebaseAnalyticsSwift
 import SwiftUI
 
 struct AnalyticsView<Component: View>: View {
@@ -12,5 +13,6 @@ struct AnalyticsView<Component: View>: View {
 
     var body: some View {
         analytics
+            .analyticsScreen(name: "analytics_component", class: "\(analytics.name))")
     }
 }

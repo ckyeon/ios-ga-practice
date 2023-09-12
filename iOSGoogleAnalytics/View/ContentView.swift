@@ -5,6 +5,7 @@
 //  Created by 조기연 on 2023/08/21.
 //
 
+import FirebaseAnalyticsSwift
 import SwiftUI
 
 struct ContentView: View {
@@ -21,6 +22,7 @@ struct ContentView: View {
                 component
             }
         }
+        .analyticsScreen(name: "main_content", class: "ContentView")
     }
 }
 

@@ -18,6 +18,9 @@
 		DB66F1902AA056D00055B672 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB66F18F2AA056D00055B672 /* AnalyticsView.swift */; };
 		DB66F1942AA057970055B672 /* AnalyticsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB66F1932AA057970055B672 /* AnalyticsButton.swift */; };
 		DB66F1972AA079580055B672 /* AnalyticsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB66F1962AA079580055B672 /* AnalyticsComponent.swift */; };
+		DBB9F69A2AB0705B00E7A5C0 /* Ext+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9F6992AB0705B00E7A5C0 /* Ext+AnyView.swift */; };
+		DBB9F69E2AB0707A00E7A5C0 /* Ext+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9F69D2AB0707A00E7A5C0 /* Ext+View.swift */; };
+		DBB9F6A02AB0735A00E7A5C0 /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9F69F2AB0735A00E7A5C0 /* Ext+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		DB66F18F2AA056D00055B672 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
 		DB66F1932AA057970055B672 /* AnalyticsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsButton.swift; sourceTree = "<group>"; };
 		DB66F1962AA079580055B672 /* AnalyticsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsComponent.swift; sourceTree = "<group>"; };
+		DBB9F6992AB0705B00E7A5C0 /* Ext+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+AnyView.swift"; sourceTree = "<group>"; };
+		DBB9F69D2AB0707A00E7A5C0 /* Ext+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+View.swift"; sourceTree = "<group>"; };
+		DBB9F69F2AB0735A00E7A5C0 /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 		DB5281C02A9394510022F471 /* iOSGoogleAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				DBB9F6982AB0704B00E7A5C0 /* Extension */,
 				DB66F1952AA079430055B672 /* Model */,
 				DB66F1922AA0572E0055B672 /* Component */,
 				DB66F1912AA057220055B672 /* View */,
@@ -107,6 +114,16 @@
 				DB66F1962AA079580055B672 /* AnalyticsComponent.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DBB9F6982AB0704B00E7A5C0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9F6992AB0705B00E7A5C0 /* Ext+AnyView.swift */,
+				DBB9F69D2AB0707A00E7A5C0 /* Ext+View.swift */,
+				DBB9F69F2AB0735A00E7A5C0 /* Ext+String.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,10 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB9F69E2AB0707A00E7A5C0 /* Ext+View.swift in Sources */,
 				DB66F1902AA056D00055B672 /* AnalyticsView.swift in Sources */,
 				DB5281C42A9394510022F471 /* ContentView.swift in Sources */,
 				DB66F1972AA079580055B672 /* AnalyticsComponent.swift in Sources */,
+				DBB9F69A2AB0705B00E7A5C0 /* Ext+AnyView.swift in Sources */,
 				DB5281C22A9394510022F471 /* iOSGoogleAnalyticsApp.swift in Sources */,
+				DBB9F6A02AB0735A00E7A5C0 /* Ext+String.swift in Sources */,
 				DB66F1942AA057970055B672 /* AnalyticsButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

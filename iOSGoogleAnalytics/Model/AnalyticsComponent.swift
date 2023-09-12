@@ -28,17 +28,3 @@ struct AnalyticsComponent: Identifiable, Hashable {
         hasher.combine(id)
     }
 }
-
-extension AnyView: Identifiable, Hashable {
-    public var id: UUID {
-        return UUID()
-    }
-
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-
-    public static func == (lhs: AnyView, rhs: AnyView) -> Bool {
-        return lhs.id == rhs.id
-    }
-}
